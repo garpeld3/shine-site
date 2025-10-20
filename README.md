@@ -1,1 +1,152 @@
 # shine-site
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Student ID Registration Form</title>
+  <style>
+    body{font-family:Arial, sans-serif;background:#0f172a;color:#e6eef8;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
+    .card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);width:100%;max-width:600px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.5);padding:24px}
+    h1{text-align:center;margin-bottom:20px}
+    form{display:flex;flex-direction:column;gap:14px}
+    label{font-size:14px;margin-bottom:4px}
+    input,select,textarea{padding:8px;border-radius:6px;border:1px solid rgba(255,255,255,0.2);background:#1e293b;color:#fff;width:100%}
+    button{background:#2b8aef;color:#fff;padding:10px;border:none;border-radius:8px;cursor:pointer;margin-top:12px}
+    hr{border:0;border-top:1px solid rgba(255,255,255,0.2);margin:16px 0}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    table, th, td{border:1px solid rgba(255,255,255,0.3); background-color: rgb(5, 5, 61); box-shadow:0 8px 20px rgba(0,0,0,0.5);}
+    th, td{padding:6px;text-align:left}
+    ul{margin:8px 0 8px 20px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>College of Technology<br>ID Registration Form</h1>
+    <form>
+      <div>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required placeholder="Shine Hope">
+      </div>
+      <div>
+        <label for="middleName">Middle Name</label>
+        <input type="text" id="middleName" name="middleName" required placeholder="Arong">
+      </div>
+      <div>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required placeholder="Jagdon">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="name@school.edu.ph">
+      </div>
+      <div>
+        <label>Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="none"></option>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+        </select>
+      </div>
+      <div>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div>
+        <label for="studentNumber">Student Number</label>
+        <input type="text" id="studentNumber" name="studentNumber" required placeholder="YYYY-NNNN">
+      </div>
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="09xxxxxxxxx">
+      </div>
+      <div>
+        <label for="course">Course/Program</label>
+        <select id="course" name="course" required>
+          <option value="none"></option>
+          <option value="Bachelor of Industrial Technology-Computer Technology">Bachelor of Industrial Technology - Computer Technology</option>
+          <option value="Bachelor of Industrial Technology-Electronics">Bachelor of Industrial Technology - Electronics</option>
+        </select>
+      </div>
+      <div>
+        <label for="yearLevel">Year Level</label>
+        <select id="yearLevel" name="yearLevel" required>
+          <option value="none"></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div>
+        <label for="section">Section</label>
+        <select id="section" name="section" required>
+          <option value="none"></option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+        </select>
+      </div>
+      <div>
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="1" required></textarea>
+      </div>
+      <div>
+        <label for="emergencyContact">Emergency Contact Name</label>
+        <input type="text" id="emergencyContact" name="emergencyContact" required placeholder="Conrad Fisher">
+      </div>
+      <div>
+        <label for="emergencyPhone">Emergency Contact Phone</label>
+        <input type="tel" id="emergencyPhone" name="emergencyPhone" required placeholder="09xxxxxxxxx">
+      </div>
+      <div>
+        <label for="photo">Upload 1x1 Picture</label>
+        <input type="file" id="photo" name="photo" accept="image/png, image/jpeg" required>
+      </div>
+      <button type="submit">Register</button>
+</form>
+
+ <hr>
+
+ <!-- Example unordered list -->
+    <h3>Reminders:</h3>
+    <ul>
+      <li>Fill in all the required information</li>
+      <li>Use correct Student Number format (YYYY-NNNN).</li>
+      <li>Upload a recent 1x1 picture with a white background.</li>
+    </ul>
+
+ <!-- Example table -->
+    <h3>Available Sections</h3>
+    <table>
+      <tr>
+        <th>Year Level</th>
+        <th>Computer Technology</th>
+        <th>Electronics</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>A, B, C, D</td>
+        <td>A-E, B-E, C-E</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>A, B, C</td>
+        <td>A-E, B-E, C-E</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>A, B</td>
+        <td>A-E, B-E</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>A, B</td>
+        <td>A-E, B-E</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
+</html>
